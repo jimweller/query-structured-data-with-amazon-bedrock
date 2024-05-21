@@ -12,7 +12,7 @@ Description: |-
 Parameters:
   CodeRepo:
     Type: String
-    Default: https://github.com/aws-samples/query-structured-data-with-amazon-bedrock
+    Default: https://github.com/jimweller/query-structured-data-with-amazon-bedrock
     Description: URL of the public git repository to use.
 
   CodeRepoBranch:
@@ -22,7 +22,7 @@ Parameters:
 
   EnableAthenaSampleData:
     Type: String
-    Default: 'Yes'
+    Default: 'No'
     Description: |-
       Set 'Yes' to deploy the Amazon Athena data source and load the example (TPC-H) dataset.
     AllowedValues:
@@ -31,7 +31,7 @@ Parameters:
 
   EnableNeptuneSampleData:
     Type: String
-    Default: 'Yes'
+    Default: 'No'
     Description: |-
       Set 'Yes' to deploy the Amazon Neptune data source and load the example (IMDb) dataset.
     AllowedValues:
