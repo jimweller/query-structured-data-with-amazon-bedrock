@@ -32,7 +32,7 @@ public class HelloBedrock {
         try (BedrockRuntimeClient bedrockClient = BedrockRuntimeClient.builder().build()) {
             InvokeModelResponse invokeModel = bedrockClient
                     .invokeModel(InvokeModelRequest.builder()
-                            .modelId("anthropic.claude-v1")
+                            .modelId("anthropic.claude-v2")
                             .body(SdkBytes.fromString(BEDROCK_JSON_BODY.replace("##PROMPT##", args[0]),
                                     Charset.defaultCharset()))
                             .build());
