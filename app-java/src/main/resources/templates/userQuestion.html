@@ -13,20 +13,21 @@
 <div class="container">
     <div class="row">
         <div class="mb-9">
-            <h1 class="mt-4">Hackathon Data Explorer</h1>
+            <h1 class="mt-4">Hackathon G.O.A.T. Toter</h1>
+            <h2 class="mt-4">Explore Datasets with Natural Language</h1>
         </div>
     </div>
     <div class="row">
         <form method="post">
             <div class="mb-3">
-                <label for="userQuestion" class="form-label">Your data exploration question:</label>
-                <input type="text" class="form-control" id="userQuestion" name="userQuestion">
-            </div>
-            <div class="mb-3">
                 <label for="databaseSelect" class="form-label">Select database to explore:</label>
                 <select id="databaseSelect" class="form-select" th:for="database " name="databaseName">
                     <option th:each="database : ${databases}" th:value="${database.getDatabaseName()}" th:text="${database.getDatabaseName()}">
                 </select>
+            </div>
+            <div class="mb-3">
+                <label for="userQuestion" class="form-label">Your data exploration question:</label>
+                <input type="text" class="form-control" id="userQuestion" name="userQuestion">
             </div>
             <div class="mb-3">
                 <a class="btn btn-secondary" data-bs-toggle="collapse" href="#whatCanIAsk" role="button" aria-expanded="false" aria-controls="collapseExample">
